@@ -21,4 +21,4 @@ Static personal portfolio website for SihleM / Poison Games.
 
 Upload the contents of this folder to a static host such as GitHub Pages, Cloudflare Pages or Netlify. Keep `index.html`, `blog.html`, `styles.css`, `script.js` and the `assets` folder together at the site root.
 
-If hosting through GitHub Pages from a repository branch, publish the repository root (`/`).
+For hosting through GitHub Pages from a repository branch, publish the repository root (`/`).
