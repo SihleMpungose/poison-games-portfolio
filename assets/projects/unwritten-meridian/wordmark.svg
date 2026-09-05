@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="420" viewBox="0 0 1600 420">
+  <g fill="none" stroke-linecap="round">
+    <circle cx="190" cy="210" r="118" stroke="#9BC7FF" stroke-width="10"/>
+    <path d="M190 64V356" stroke="#EDF2F7" stroke-width="7"/>
+    <path d="M190 89L190 176M190 244L190 331" stroke="#080B11" stroke-width="20"/>
+    <path d="M197 221C235 178 272 143 314 114" stroke="#92E6B6" stroke-width="6"/>
+    <circle cx="315" cy="113" r="9" fill="#92E6B6" stroke="none"/>
+  </g>
+  <text x="390" y="205" fill="#EDF2F7" font-family="'Nimbus Sans Narrow','DejaVu Sans',sans-serif" font-size="122" font-weight="700" letter-spacing="15">UNWRITTEN</text>
+  <text x="390" y="330" fill="#9BC7FF" font-family="'Nimbus Sans Narrow','DejaVu Sans',sans-serif" font-size="122" font-weight="700" letter-spacing="18">MERIDIAN</text>
+</svg>

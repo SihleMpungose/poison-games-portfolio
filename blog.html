@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Poison Games dev blog — release notes, lessons and updates from SihleM's game-development journey." />
+  <meta name="theme-color" content="#06070b" />
+  <title>Dev Blog | Poison Games — SihleM</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><span></span></div>
+  <div class="page-glow glow-a" aria-hidden="true"></div>
+  <div class="page-glow glow-b" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="index.html" aria-label="Poison Games — portfolio home">
+      <span class="brand-mark" aria-hidden="true"><b>P</b><i>G</i></span>
+      <span class="brand-copy"><strong>Poison Games</strong><small>Games by SihleM</small></span>
+    </a>
+    <button class="menu-btn" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#journey">Journey</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="index.html#publishing">Publishing</a>
+      <a href="index.html#about">About</a>
+      <a class="active" href="blog.html">Blog</a>
+    </nav>
+    <span class="header-badge">Dev journal</span>
+  </header>
+
+  <main class="blog-main">
+    <section class="blog-hero section-shell">
+      <div class="blog-hero-copy reveal">
+        <p class="eyebrow">POISON GAMES / DEV BLOG</p>
+        <h1>Notes from the<br><span>game-dev journey.</span></h1>
+        <p>A separate space for release updates, lessons, experiments and the things I learn while building games as SihleM.</p>
+      </div>
+      <aside class="blog-hero-panel reveal">
+        <small>WHY THIS PAGE EXISTS</small>
+        <strong>Not just what I build—what I learn while building it.</strong>
+        <p>I’m still early in game development. This journal is a record of progress, problems solved and lessons I can carry into the next project.</p>
+      </aside>
+    </section>
+
+    <section class="blog-section section-shell">
+      <div class="blog-section-head reveal">
+        <div><p class="eyebrow">LATEST NOTES</p><h2>Development journal</h2></div>
+        <p>Updates here focus on my personal game-development work and are separate from my employment or any organization I work for.</p>
+      </div>
+
+      <div class="blog-grid">
+        <article class="blog-card featured reveal">
+          <div class="blog-card-media"><img src="assets/projects/unwritten-meridian/cover-630x500.png" alt="Unwritten Meridian Book One cover artwork" /></div>
+          <div class="blog-card-body">
+            <div class="blog-meta"><span>30 AUG 2026</span><i></i><span>RELEASE</span><i></i><span>INTERACTIVE FICTION</span></div>
+            <h3>Unwritten Meridian — Book One is live.</h3>
+            <p>Book One reached itch.io after a long stretch of work on branching choices, persistent state, consequences, save slots, mobile readability and endings. Releasing it gave me a much clearer understanding of the difference between getting a story playable and preparing it for actual players.</p>
+            <a class="project-link" href="https://sihlem.itch.io/unwritten-meridian" target="_blank" rel="noopener noreferrer">Play the release on itch.io ↗</a>
+          </div>
+        </article>
+
+        <article class="blog-card reveal">
+          <div class="blog-card-media"><img class="logo-contained" src="assets/projects/mobile-mma/icon-512.png" alt="Mobile MMA Sim official artwork" /></div>
+          <div class="blog-card-body">
+            <div class="blog-meta"><span>30 AUG 2026</span><i></i><span>TESTING</span><i></i><span>ANDROID</span></div>
+            <h3>Taking Mobile MMA Sim into Android testing.</h3>
+            <p>Moving from a browser build toward Google Play testing introduced a new set of practical lessons: packaging, tester access, release tracks, version changes and testing the same game outside the environment where it was originally built.</p>
+            <a class="project-link" href="https://sihlem.itch.io/mobilemmasim-full/devlog/1646530/mobile-mma-sim-android-testers-wanted" target="_blank" rel="noopener noreferrer">Read the itch.io devlog ↗</a>
+          </div>
+        </article>
+
+        <article class="blog-card reveal">
+          <div class="blog-card-body">
+            <div class="blog-meta"><span>DEV JOURNEY</span><i></i><span>LESSONS</span></div>
+            <h3>Why I’m keeping the beginner label.</h3>
+            <p>I want this portfolio to show growth without pretending that every system I build is expert-level work. The useful part of being at this stage is that every project exposes a new gap: architecture, UI, testing, release preparation or simply learning when a feature has become too complicated. The goal is to make the next build cleaner than the last.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="blog-note reveal"><strong>More posts will be added as the projects move forward.</strong> The landing page stays focused on the portfolio; development notes live here so the two purposes do not compete with each other.</div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="section-shell footer-inner">
+      <div class="footer-brand"><span class="brand-mark" aria-hidden="true"><b>P</b><i>G</i></span><div><strong>Poison Games</strong><p>Games by SihleM</p></div></div>
+      <div class="footer-center"><a href="index.html">Portfolio</a> · <a href="https://sihlem.itch.io/" target="_blank" rel="noopener noreferrer">itch.io</a></div>
+      <div class="footer-note"><p>Sihle Mpungose</p><p>© <span id="year"></span></p></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
