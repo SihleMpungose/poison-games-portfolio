@@ -3,7 +3,6 @@ const LINKS = {
   facebook: 'https://www.facebook.com/share/14o7RKUEV2E/',
   discord: 'https://discord.gg/B3WQaUgSg',
   itch: 'https://sihlem.itch.io/',
-  github: 'https://github.com/SihleMpungose',
   play: 'https://play.google.com/store/apps/details?id=com.mobilemmasim.myapp',
   mmaDemo: 'https://sihlem.itch.io/mobilemmasim',
   mmaFull: 'https://sihlem.itch.io/mobilemmasim-full',
@@ -18,7 +17,7 @@ function injectBrandStyles() {
   style.id = 'poison-games-live-styles';
   style.textContent = `
     .social-section{padding-top:86px;padding-bottom:96px}
-    .social-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+    .social-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
     .social-card{min-height:178px;padding:22px;display:flex;flex-direction:column;justify-content:space-between;gap:18px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,rgba(18,26,33,.88),rgba(10,15,19,.94));text-decoration:none;transition:transform .2s ease,border-color .2s ease,background .2s ease,box-shadow .2s ease}
     .social-card:hover{transform:translateY(-4px);border-color:var(--line-strong);background:linear-gradient(145deg,rgba(23,32,42,.94),rgba(10,15,19,.98));box-shadow:0 20px 50px rgba(0,0,0,.22)}
     .social-mark{width:42px;height:42px;display:grid;place-items:center;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.035);font:850 12px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.04em}
@@ -27,7 +26,6 @@ function injectBrandStyles() {
     .social-card small{color:var(--muted-2);font:700 8px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.1em;text-transform:uppercase}
     .social-card.x .social-mark,.social-card.facebook .social-mark{color:var(--blue-soft)}
     .social-card.discord .social-mark,.social-card.itch .social-mark{color:var(--red)}
-    .social-card.github .social-mark{color:var(--text)}
     .social-note{margin-top:18px;padding:16px 18px;border:1px solid var(--line);border-radius:14px;color:var(--muted);background:rgba(255,255,255,.018);font-size:13px}
     .footer-center{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 12px;align-items:center}
     .footer-center a{color:var(--muted);text-decoration:none;font-size:11px;font-weight:750}
@@ -39,8 +37,8 @@ function injectBrandStyles() {
     .community-inline a:hover{color:var(--text);border-color:var(--line-strong)}
     .live-release-tag{display:inline-flex;align-items:center;gap:7px;margin-top:12px;padding:7px 10px;border:1px solid rgba(79,131,255,.22);border-radius:999px;color:var(--blue-soft);font:700 9px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.07em;text-transform:uppercase}
     .live-release-tag::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--red);box-shadow:0 0 10px rgba(255,64,89,.5)}
-    @media(max-width:980px){.social-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
-    @media(max-width:700px){.social-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.footer-center{justify-content:flex-start}}
+    @media(max-width:980px){.social-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:700px){.footer-center{justify-content:flex-start}}
     @media(max-width:480px){.social-grid{grid-template-columns:1fr}.social-card{min-height:150px}}
   `;
   document.head.appendChild(style);
@@ -51,8 +49,7 @@ function socialLinksMarkup(includePortfolio = false) {
     <a href="${LINKS.x}" ${externalAttrs}>X</a>
     <a href="${LINKS.facebook}" ${externalAttrs}>Facebook</a>
     <a href="${LINKS.discord}" ${externalAttrs}>Discord</a>
-    <a href="${LINKS.itch}" ${externalAttrs}>itch.io</a>
-    <a href="${LINKS.github}" ${externalAttrs}>GitHub</a>`;
+    <a href="${LINKS.itch}" ${externalAttrs}>itch.io</a>`;
 }
 
 function enhanceNavigation() {
@@ -136,7 +133,6 @@ function enhanceHomePage() {
           <a class="social-card facebook reveal" href="${LINKS.facebook}" ${externalAttrs}><span class="social-mark">f</span><div><h3>Facebook</h3><p>Poison Games posts, game updates and community-facing news.</p></div><small>Poison Games ↗</small></a>
           <a class="social-card discord reveal" href="${LINKS.discord}" ${externalAttrs}><span class="social-mark">D</span><div><h3>Discord</h3><p>Join the Poison Games community and follow development more closely.</p></div><small>Join server ↗</small></a>
           <a class="social-card itch reveal" href="${LINKS.itch}" ${externalAttrs}><span class="social-mark">IO</span><div><h3>itch.io</h3><p>Playable releases, demos, full editions and project devlogs.</p></div><small>Poison Games on itch.io ↗</small></a>
-          <a class="social-card github reveal" href="${LINKS.github}" ${externalAttrs}><span class="social-mark">GH</span><div><h3>GitHub</h3><p>The technical side of my journey, including this portfolio repository.</p></div><small>SihleMpungose ↗</small></a>
         </div>
         <div class="social-note reveal">For longer development notes and release history, use the <a class="text-link" href="blog.html">Poison Games devlog →</a></div>
       </section>`);
