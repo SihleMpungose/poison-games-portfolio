@@ -8,10 +8,9 @@ The site documents an early-stage but growing game-development journey, public r
 
 - **Mobile MMA Sim** — Google Play Early Access / itch.io release, with the major v3.0.0.0 launch update targeted for 13 October 2026. Current work includes stability, fight-system realism and balance, regression testing, save continuity and Windows platform preparation.
 - **Unwritten Meridian — Book One** — public on itch.io, with Android / Google Play testing and release preparation continuing.
-- **Online MMA Sim** — separate multiplayer-focused project at an early Alpha preview stage. No public launch date announced.
-- **Music Career Simulation** — working title for an unnamed realistic music-career / label simulation currently in development.
-- **Another Project** — unnamed project kept deliberately high-level while in development.
-- **3D Game Project** — deliberately broad public description while early development continues.
+- **Online MMA Sim** — separate online MMA project. Development is currently paused.
+- **Untitled Music Project** — unnamed music-related game project currently in development; public details are intentionally limited.
+- **2D Game Project** — early project in development; public details are intentionally limited.
 
 ## Live portfolio
 
