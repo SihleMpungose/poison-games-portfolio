@@ -120,8 +120,8 @@ function insertSnapshot() {
       <div class="snapshot-grid">
         <article class="snapshot-card major reveal"><div><small>MOBILE MMA SIM</small><h3>Launch-prep phase</h3><p>Google Play Early Access continues while I stabilise the current build and prepare the major v3.0 launch update.</p></div><strong>Launch target • 13 Oct 2026</strong></article>
         <article class="snapshot-card story reveal"><div><small>UNWRITTEN MERIDIAN</small><h3>Book One testing & release prep</h3><p>Book One is live on itch.io while the Android version continues through Google Play testing / Early Access preparation.</p></div><strong>Interactive fiction • Android • Web</strong></article>
-        <article class="snapshot-card alpha reveal"><div><small>ONLINE MMA SIM</small><h3>Alpha preview stage</h3><p>The multiplayer-focused MMA project is now at an early Alpha preview stage, with online career and event flow being tested.</p></div><strong>No public launch date announced</strong></article>
-        <article class="snapshot-card music reveal"><div><small>MUSIC CAREER SIM</small><h3>Realism pass in development</h3><p>An unnamed music-career / label simulation is being built around long-term career decisions, releases, live events and reputation.</p></div><strong>Working title • In development</strong></article>
+        <article class="snapshot-card alpha reveal"><div><small>ONLINE MMA SIM</small><h3>Development paused</h3><p>A separate online MMA project that is currently paused while I focus on other releases and development priorities.</p></div><strong>Paused • No launch date announced</strong></article>
+        <article class="snapshot-card music reveal"><div><small>UNTITLED MUSIC PROJECT</small><h3>In development</h3><p>An unnamed music-related game project currently in development. More will be shared when it is ready.</p></div><strong>Untitled • In development</strong></article>
       </div>
     </section>`);
 }
@@ -133,10 +133,10 @@ function enhanceHomePage() {
   if (statusPill) statusPill.innerHTML = '<span></span> Early-stage developer • shipping & learning';
 
   const heroText = document.querySelector('.hero-text');
-  if (heroText) heroText.innerHTML = 'I’m <strong>SihleM</strong>, an early-stage game developer building independent projects under <strong>Poison Games</strong>. I now have public releases and Early Access builds while continuing to learn through active simulation, interactive-fiction, multiplayer and platform work.';
+  if (heroText) heroText.innerHTML = 'I’m <strong>SihleM</strong>, an early-stage game developer building independent projects under <strong>Poison Games</strong>. I now have public releases and Early Access builds while continuing to learn through game development, testing, publishing and new projects.';
 
   const heroMeta = document.querySelectorAll('.hero-meta > div');
-  if (heroMeta[0]) heroMeta[0].querySelector('strong').textContent = 'Simulation, narrative & systems';
+  if (heroMeta[0]) heroMeta[0].querySelector('strong').textContent = 'Games, testing & publishing';
   if (heroMeta[1]) heroMeta[1].querySelector('strong').textContent = 'Build → Test → Release → Improve';
   if (heroMeta[2]) heroMeta[2].querySelector('strong').textContent = 'Active releases + new projects';
 
@@ -145,16 +145,15 @@ function enhanceHomePage() {
     showcase.innerHTML = `
       <div class="showcase-row active"><span>01</span><div><strong>Mobile MMA Sim</strong><small>Early Access • v3.0 launch prep</small></div><b>↗</b></div>
       <div class="showcase-row"><span>02</span><div><strong>Unwritten Meridian</strong><small>Book One • itch.io + Android testing</small></div><b>↗</b></div>
-      <div class="showcase-row"><span>03</span><div><strong>Online MMA Sim</strong><small>Alpha preview stage</small></div><b>↗</b></div>
-      <div class="showcase-row"><span>04</span><div><strong>Music Career Simulation</strong><small>Working title • In development</small></div><b>↗</b></div>
-      <div class="showcase-row"><span>05</span><div><strong>Another Project</strong><small>In development</small></div><b>↗</b></div>
-      <div class="showcase-row"><span>06</span><div><strong>3D Game Project</strong><small>In development</small></div><b>↗</b></div>`;
+      <div class="showcase-row"><span>03</span><div><strong>Online MMA Sim</strong><small>Development paused</small></div><b>↗</b></div>
+      <div class="showcase-row"><span>04</span><div><strong>Untitled Music Project</strong><small>In development</small></div><b>↗</b></div>
+      <div class="showcase-row"><span>05</span><div><strong>2D Game Project</strong><small>In development</small></div><b>↗</b></div>`;
   }
 
   insertSnapshot();
 
   const projectsIntro = document.querySelector('#projects .section-intro > p');
-  if (projectsIntro) projectsIntro.textContent = 'The portfolio now spans released games, Early Access testing, an online Alpha and new projects in development. I keep public descriptions focused on what players can understand without exposing unreleased internal game logic.';
+  if (projectsIntro) projectsIntro.textContent = 'The portfolio includes public releases, Early Access work and selected projects in development. Unreleased projects are intentionally kept high-level until there is more to share.';
 
   const mmaCard = [...document.querySelectorAll('.project-card')].find(card => card.querySelector('h3')?.textContent.trim() === 'Mobile MMA Sim');
   if (mmaCard) {
@@ -195,16 +194,15 @@ function enhanceHomePage() {
       <article class="project-card reveal" data-project="online-mma">
         <div class="project-visual visual-online">
           <span class="project-number">03</span>
-          <span class="project-status build">Alpha preview</span>
+          <span class="project-status build">Paused</span>
           <div class="online-arena" aria-hidden="true"></div><div class="online-line" aria-hidden="true"></div>
-          <div class="visual-caption"><small>ONLINE • CAREER • EVENTS</small><strong>ON</strong></div>
+          <div class="visual-caption"><small>ONLINE MMA PROJECT</small><strong>ON</strong></div>
         </div>
         <div class="project-content compact">
-          <div class="project-kicker"><span>MULTIPLAYER PROJECT</span><span>Early Alpha</span></div>
+          <div class="project-kicker"><span>ONLINE PROJECT</span><span>Paused</span></div>
           <h3>Online MMA Sim</h3>
-          <p>A separate multiplayer-focused MMA simulation in early Alpha. Current work is centred on making player challenges, event scheduling, fight processing and shared progression feel coherent without slowing down online play.</p>
-          <div class="tag-row"><span>Online</span><span>Simulation</span><span>Alpha</span><span>Systems</span></div>
-          <div class="project-update"><strong>Current milestone:</strong> Alpha preview stage. No public launch date has been announced.</div>
+          <p>A separate online MMA project. Development is currently paused while I focus on other projects and releases.</p>
+          <div class="tag-row"><span>Online</span><span>MMA</span><span>Paused</span></div>
         </div>
       </article>
 
@@ -213,30 +211,48 @@ function enhanceHomePage() {
           <span class="project-number">04</span>
           <span class="project-status warm">In development</span>
           <div class="music-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-          <div class="visual-caption"><small>CAREER • MUSIC • CONSEQUENCE</small><strong>MC</strong></div>
+          <div class="visual-caption"><small>UNTITLED MUSIC PROJECT</small><strong>♪</strong></div>
         </div>
         <div class="project-content compact">
-          <div class="project-kicker"><span>WORKING TITLE</span><span>Career simulation</span></div>
-          <h3>Music Career Simulation</h3>
-          <p>An unnamed music-career and label simulation being developed around realistic planning, releases, live events, relationships and the way a player's reputation can shape later opportunities.</p>
-          <div class="tag-row"><span>Simulation</span><span>Career</span><span>Management</span><span>Realism</span></div>
-          <div class="project-update"><strong>Current milestone:</strong> improving realism, live-show feedback, project planning and long-term consequence systems without overcrowding the interface.</div>
+          <div class="project-kicker"><span>UNTITLED PROJECT</span><span>In development</span></div>
+          <h3>Untitled Music Project</h3>
+          <p>An unnamed music-related game project currently in development. I’m keeping the public description intentionally broad until more is ready to show.</p>
+          <div class="tag-row"><span>Music</span><span>In development</span></div>
         </div>
       </article>`);
   }
 
+  [...document.querySelectorAll('#projects .project-card')].forEach(card => {
+    if (card.querySelector('h3')?.textContent.trim() === 'Another Project') card.remove();
+  });
+
+  const old3DCard = [...document.querySelectorAll('#projects .project-card')].find(card => card.querySelector('h3')?.textContent.trim() === '3D Game Project');
+  if (old3DCard) {
+    old3DCard.querySelector('h3').textContent = '2D Game Project';
+    const kicker = old3DCard.querySelector('.project-kicker span:first-child');
+    if (kicker) kicker.textContent = '2D PROJECT';
+    const copy = old3DCard.querySelector('.project-content > p');
+    if (copy) copy.textContent = 'A 2D game project currently in development. More details will be shared when the project is ready.';
+    const tags = old3DCard.querySelector('.tag-row');
+    if (tags) tags.innerHTML = '<span>2D game</span><span>In development</span>';
+    const shape = old3DCard.querySelector('.three-d-shape span');
+    if (shape) shape.textContent = '2D';
+    const captionSmall = old3DCard.querySelector('.visual-caption small');
+    const captionStrong = old3DCard.querySelector('.visual-caption strong');
+    if (captionSmall) captionSmall.textContent = '2D GAME PROJECT';
+    if (captionStrong) captionStrong.textContent = '2D';
+  }
+
   const numberedCards = [...document.querySelectorAll('#projects .project-grid .project-card')];
-  let nextNumber = 2;
   numberedCards.forEach(card => {
     const title = card.querySelector('h3')?.textContent.trim();
     const number = card.querySelector('.project-number');
-    if (title === 'Unwritten Meridian — Book One') nextNumber = 2;
-    else if (title === 'Online MMA Sim') nextNumber = 3;
-    else if (title === 'Music Career Simulation') nextNumber = 4;
-    else if (title === 'Another Project') nextNumber = 5;
-    else if (title === '3D Game Project') nextNumber = 6;
-    else return;
-    if (number) number.textContent = String(nextNumber).padStart(2,'0');
+    let n = null;
+    if (title === 'Unwritten Meridian — Book One') n = 2;
+    else if (title === 'Online MMA Sim') n = 3;
+    else if (title === 'Untitled Music Project') n = 4;
+    else if (title === '2D Game Project') n = 5;
+    if (number && n) number.textContent = String(n).padStart(2,'0');
   });
 
   const journeyItems = [...document.querySelectorAll('.timeline-item')];
@@ -252,20 +268,20 @@ function enhanceHomePage() {
     const h = expandItem.querySelector('h3');
     const p = expandItem.querySelector('p');
     if (h) h.textContent = 'Expanding into multiplayer, narrative and new simulations';
-    if (p) p.textContent = 'Unwritten Meridian introduced branching narrative state, Online MMA Sim adds multiplayer/event-flow challenges, and newer simulations are pushing me toward more persistent, believable game worlds.';
+    if (p) p.textContent = 'My projects are helping me explore different types of game development, from interactive fiction to online concepts and other games still being kept under wraps.';
   }
   const nowItem = journeyItems.find(item => item.querySelector('small')?.textContent.trim() === 'NOW');
   if (nowItem) {
     const h = nowItem.querySelector('h3');
     const p = nowItem.querySelector('p');
     if (h) h.textContent = 'Launch preparation, platform work and better QA';
-    if (p) p.textContent = 'My current focus is stabilising Mobile MMA Sim for its major October launch, progressing Unwritten Meridian on Android, preparing an Online MMA Alpha preview and improving the structure of newer projects.';
+    if (p) p.textContent = 'My current focus is stabilising Mobile MMA Sim for its major October launch, progressing Unwritten Meridian on Android and continuing selected newer projects. Online MMA Sim is currently paused.';
   }
 
   const skills = [...document.querySelectorAll('.skill-card')];
   if (skills[0]) {
     skills[0].querySelector('h3').textContent = 'Game systems & simulation';
-    skills[0].querySelector('p').textContent = 'Career loops, progression, persistent reputation, rankings, contracts, events, attributes and connected consequences across different simulation projects.';
+    skills[0].querySelector('p').textContent = 'Designing and connecting gameplay features across simulation and story-driven projects.';
   }
   if (skills[1]) {
     skills[1].querySelector('h3').textContent = 'QA & release testing';
@@ -276,7 +292,7 @@ function enhanceHomePage() {
   }
   if (skills[3]) {
     skills[3].querySelector('h3').textContent = 'Mobile, desktop & 3D';
-    skills[3].querySelector('p').textContent = 'Android packaging and Play Console workflows, Windows builds/platform preparation, responsive UI work and continued early 3D development.';
+    skills[3].querySelector('p').textContent = 'Android packaging and Play Console workflows, Windows builds/platform preparation, responsive UI work and continued 2D game development.';
   }
 
   const playCard = [...document.querySelectorAll('.publish-card')].find(card => card.querySelector('h3')?.textContent.trim() === 'Google Play');
@@ -364,19 +380,17 @@ function enhanceDevlog() {
 
       <article class="blog-card reveal" data-post="online-mma-alpha">
         <div class="blog-card-body">
-          <div class="blog-meta"><span>02 OCT 2026</span><i></i><span>ALPHA</span><i></i><span>ONLINE MMA SIM</span></div>
-          <h3>Online MMA Sim reaches an Alpha preview stage.</h3>
-          <p>This is a separate multiplayer-focused project rather than an online mode for Mobile MMA Sim. The current Alpha work is about making challenge visibility, event scheduling, fight timing and player progression behave like one connected online system.</p>
-          <div class="release-callout"><strong>Public status:</strong> Alpha preview stage. I have not announced a public launch date yet.</div>
+          <div class="blog-meta"><span>02 OCT 2026</span><i></i><span>PAUSED</span><i></i><span>ONLINE MMA SIM</span></div>
+          <h3>Online MMA Sim development is paused.</h3>
+          <p>Online MMA Sim remains a separate project, but active development is paused while I focus on other priorities. I’ll share more when development resumes.</p>
         </div>
       </article>
 
       <article class="blog-card reveal" data-post="music-sim-progress">
         <div class="blog-card-body">
-          <div class="blog-meta"><span>02 OCT 2026</span><i></i><span>IN DEVELOPMENT</span><i></i><span>NEW SIMULATION</span></div>
-          <h3>A realistic music-career simulation is taking shape.</h3>
-          <p>I’m also building an unnamed music-career / label simulation. The project is teaching me how to design a slower, more believable career loop where releases, live shows, professional relationships and past behaviour can matter later instead of everything being reduced to repeated clicks.</p>
-          <div class="release-callout"><strong>Current focus:</strong> clearer mobile layouts, richer live-show feedback, project/release planning and long-term reputation without overloading the screen.</div>
+          <div class="blog-meta"><span>02 OCT 2026</span><i></i><span>IN DEVELOPMENT</span><i></i><span>UNTITLED PROJECT</span></div>
+          <h3>A new music-related project is in development.</h3>
+          <p>I’m working on an unnamed music-related game project. I’m keeping details limited for now and will reveal more when the project is further along.</p>
         </div>
       </article>
 
