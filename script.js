@@ -222,27 +222,6 @@ function enhanceHomePage() {
       </article>`);
   }
 
-  [...document.querySelectorAll('#projects .project-card')].forEach(card => {
-    if (card.querySelector('h3')?.textContent.trim() === 'Another Project') card.remove();
-  });
-
-  const old3DCard = [...document.querySelectorAll('#projects .project-card')].find(card => card.querySelector('h3')?.textContent.trim() === '3D Game Project');
-  if (old3DCard) {
-    old3DCard.querySelector('h3').textContent = '2D Game Project';
-    const kicker = old3DCard.querySelector('.project-kicker span:first-child');
-    if (kicker) kicker.textContent = '2D PROJECT';
-    const copy = old3DCard.querySelector('.project-content > p');
-    if (copy) copy.textContent = 'A 2D game project currently in development. More details will be shared when the project is ready.';
-    const tags = old3DCard.querySelector('.tag-row');
-    if (tags) tags.innerHTML = '<span>2D game</span><span>In development</span>';
-    const shape = old3DCard.querySelector('.three-d-shape span');
-    if (shape) shape.textContent = '2D';
-    const captionSmall = old3DCard.querySelector('.visual-caption small');
-    const captionStrong = old3DCard.querySelector('.visual-caption strong');
-    if (captionSmall) captionSmall.textContent = '2D GAME PROJECT';
-    if (captionStrong) captionStrong.textContent = '2D';
-  }
-
   const numberedCards = [...document.querySelectorAll('#projects .project-grid .project-card')];
   numberedCards.forEach(card => {
     const title = card.querySelector('h3')?.textContent.trim();
