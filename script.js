@@ -115,13 +115,13 @@ function insertSnapshot() {
           <p class="eyebrow">CURRENT DEVELOPMENT SNAPSHOT</p>
           <h2>October 2026.</h2>
         </div>
-        <span class="snapshot-date">Updated 02 Oct 2026</span>
+        <span class="snapshot-date">Updated 13 Oct 2026</span>
       </div>
       <div class="snapshot-grid">
-        <article class="snapshot-card major reveal"><div><small>MOBILE MMA SIM</small><h3>Launch-prep phase</h3><p>Google Play Early Access continues while I stabilise the current build and prepare the major v3.0 launch update.</p></div><strong>Launch target • 13 Oct 2026</strong></article>
-        <article class="snapshot-card story reveal"><div><small>UNWRITTEN MERIDIAN</small><h3>Book One testing & release prep</h3><p>Book One is live on itch.io while the Android version continues through Google Play testing / Early Access preparation.</p></div><strong>Interactive fiction • Android • Web</strong></article>
+        <article class="snapshot-card major reveal"><div><small>MOBILE MMA SIM</small><h3>v3.0 full launch</h3><p>Version 3.0.0.0 is now live on Google Play following Early Access. Development continues with post-launch fixes and improvements.</p></div><strong>Full release • 13 Oct 2026</strong></article>
+        <article class="snapshot-card story reveal"><div><small>UNWRITTEN MERIDIAN</small><h3>Android launch preparation</h3><p>Book One remains available on itch.io and now has a Google Play listing while launch preparation continues.</p></div><strong>Book One • itch.io + Google Play</strong></article>
         <article class="snapshot-card alpha reveal"><div><small>ONLINE MMA SIM</small><h3>Development paused</h3><p>A separate online MMA project that is currently paused while I focus on other releases and development priorities.</p></div><strong>Paused • No launch date announced</strong></article>
-        <article class="snapshot-card music reveal"><div><small>UNTITLED MUSIC PROJECT</small><h3>In development</h3><p>An unnamed music-related game project currently in development. More will be shared when it is ready.</p></div><strong>Untitled • In development</strong></article>
+        <article class="snapshot-card music reveal"><div><small>TRACKBORN</small><h3>Early Access preparation</h3><p>TrackBorn is a music-career simulation currently being prepared for Android Early Access. Public details remain intentionally limited for now.</p></div><strong>In development • Android</strong></article>
       </div>
     </section>`);
 }
@@ -133,20 +133,20 @@ function enhanceHomePage() {
   if (statusPill) statusPill.innerHTML = '<span></span> Early-stage developer • shipping & learning';
 
   const heroText = document.querySelector('.hero-text');
-  if (heroText) heroText.innerHTML = 'I’m <strong>SihleM</strong>, an early-stage game developer building independent projects under <strong>Poison Games</strong>. I now have public releases and Early Access builds while continuing to learn through game development, testing, publishing and new projects.';
+  if (heroText) heroText.innerHTML = 'I’m <strong>SihleM</strong>, an early-stage game developer building independent projects under <strong>Poison Games</strong>. I now have public releases, launch experience and new projects in development while continuing to learn through game development, testing and publishing.';
 
   const heroMeta = document.querySelectorAll('.hero-meta > div');
   if (heroMeta[0]) heroMeta[0].querySelector('strong').textContent = 'Games, testing & publishing';
   if (heroMeta[1]) heroMeta[1].querySelector('strong').textContent = 'Build → Test → Release → Improve';
-  if (heroMeta[2]) heroMeta[2].querySelector('strong').textContent = 'Active releases + new projects';
+  if (heroMeta[2]) heroMeta[2].querySelector('strong').textContent = 'Released games + new projects';
 
   const showcase = document.querySelector('.showcase-projects');
   if (showcase) {
     showcase.innerHTML = `
-      <div class="showcase-row active"><span>01</span><div><strong>Mobile MMA Sim</strong><small>Early Access • v3.0 launch prep</small></div><b>↗</b></div>
-      <div class="showcase-row"><span>02</span><div><strong>Unwritten Meridian</strong><small>Book One • itch.io + Android testing</small></div><b>↗</b></div>
+      <div class="showcase-row active"><span>01</span><div><strong>Mobile MMA Sim</strong><small>v3.0.0.0 • Full release</small></div><b>↗</b></div>
+      <div class="showcase-row"><span>02</span><div><strong>Unwritten Meridian</strong><small>Book One • Android launch prep</small></div><b>↗</b></div>
       <div class="showcase-row"><span>03</span><div><strong>Online MMA Sim</strong><small>Development paused</small></div><b>↗</b></div>
-      <div class="showcase-row"><span>04</span><div><strong>Untitled Music Project</strong><small>In development</small></div><b>↗</b></div>
+      <div class="showcase-row"><span>04</span><div><strong>TrackBorn</strong><small>Early Access preparation</small></div><b>↗</b></div>
       <div class="showcase-row"><span>05</span><div><strong>2D Game Project</strong><small>In development</small></div><b>↗</b></div>`;
   }
 
@@ -158,32 +158,32 @@ function enhanceHomePage() {
   const mmaCard = [...document.querySelectorAll('.project-card')].find(card => card.querySelector('h3')?.textContent.trim() === 'Mobile MMA Sim');
   if (mmaCard) {
     const status = mmaCard.querySelector('.project-status');
-    if (status) status.textContent = 'Early Access • Launch prep';
+    if (status) status.textContent = 'Full release • v3.0.0.0';
     const copy = mmaCard.querySelector('.project-content > p');
-    if (copy) copy.textContent = 'My most developed project so far. Mobile MMA Sim has moved from browser prototypes into itch.io releases, Google Play Early Access and platform-focused builds, while I continue improving career flow, fight balance, realism and stability.';
+    if (copy) copy.textContent = 'My most developed project so far. Mobile MMA Sim has now completed its move from Early Access to the v3.0.0.0 full Google Play release, with development continuing after launch.';
     const releaseBlock = [...mmaCard.querySelectorAll('.detail-grid > div')].find(div => div.querySelector('strong')?.textContent.trim() === 'Release work');
     const releaseText = releaseBlock?.querySelector('p');
-    if (releaseText) releaseText.textContent = 'Google Play Early Access, itch.io demo/full editions, versioned saves and Windows platform preparation.';
+    if (releaseText) releaseText.textContent = 'Google Play full release, itch.io demo/full editions, versioned builds and continued platform support.';
     const fightBlock = [...mmaCard.querySelectorAll('.detail-grid > div')].find(div => div.querySelector('strong')?.textContent.trim() === 'Fight systems');
     const fightText = fightBlock?.querySelector('p');
     if (fightText) fightText.textContent = 'Second-by-second simulation, tactics, judging, style identity, stamina, position changes and ongoing balance work.';
     const actions = mmaCard.querySelector('.project-actions');
     if (actions && !actions.querySelector(`[href="${LINKS.play}"]`)) {
-      actions.insertAdjacentHTML('beforeend', `<a class="project-link blue-link" href="${LINKS.play}" ${externalAttrs}>View Google Play Early Access <span aria-hidden="true">↗</span></a>`);
+      actions.insertAdjacentHTML('beforeend', `<a class="project-link blue-link" href="${LINKS.play}" ${externalAttrs}>View on Google Play <span aria-hidden="true">↗</span></a>`);
     }
     if (!mmaCard.querySelector('.project-update')) {
-      mmaCard.querySelector('.project-content')?.insertAdjacentHTML('beforeend', '<div class="project-update"><strong>Current milestone:</strong> stabilising Early Access and preparing the major v3.0.0.0 launch update for 13 October 2026, with Windows platform work continuing alongside the launch build.</div>');
+      mmaCard.querySelector('.project-content')?.insertAdjacentHTML('beforeend', '<div class="project-update"><strong>Current milestone:</strong> v3.0.0.0 is now fully launched on Google Play. Post-launch work is focused on fixes, consistency and continued improvement.</div>');
     }
   }
 
   const meridianCard = [...document.querySelectorAll('.project-card')].find(card => card.querySelector('h3')?.textContent.includes('Unwritten Meridian'));
   if (meridianCard) {
     const status = meridianCard.querySelector('.project-status');
-    if (status) status.textContent = 'Book One • Android testing';
+    if (status) status.textContent = 'Book One • Android launch prep';
     const copy = meridianCard.querySelector('.project-content > p');
-    if (copy) copy.textContent = 'A branching interactive-fiction project focused on player choice, persistent consequences and continuity. Book One is publicly available on itch.io while I continue Android testing and Google Play release preparation.';
+    if (copy) copy.textContent = 'A branching interactive-fiction project focused on player choice, persistent consequences and continuity. Book One is publicly available on itch.io and has a Google Play listing while Android launch preparation continues.';
     if (!meridianCard.querySelector('.project-update')) {
-      meridianCard.querySelector('.project-content')?.insertAdjacentHTML('beforeend', '<div class="project-update"><strong>Current milestone:</strong> Google Play testing / Early Access preparation, store assets and launch material for Book One.</div>');
+      meridianCard.querySelector('.project-content')?.insertAdjacentHTML('beforeend', '<div class="project-update"><strong>Current milestone:</strong> Google Play launch preparation continues while the itch.io release remains available.</div>');
     }
   }
 
@@ -206,18 +206,18 @@ function enhanceHomePage() {
         </div>
       </article>
 
-      <article class="project-card reveal" data-project="music-career">
+      <article class="project-card reveal" data-project="trackborn">
         <div class="project-visual visual-music">
           <span class="project-number">04</span>
           <span class="project-status warm">In development</span>
           <div class="music-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-          <div class="visual-caption"><small>UNTITLED MUSIC PROJECT</small><strong>♪</strong></div>
+          <div class="visual-caption"><small>TRACKBORN</small><strong>TB</strong></div>
         </div>
         <div class="project-content compact">
-          <div class="project-kicker"><span>UNTITLED PROJECT</span><span>In development</span></div>
-          <h3>Untitled Music Project</h3>
-          <p>An unnamed music-related game project currently in development. I’m keeping the public description intentionally broad until more is ready to show.</p>
-          <div class="tag-row"><span>Music</span><span>In development</span></div>
+          <div class="project-kicker"><span>TRACKBORN</span><span>Early Access prep</span></div>
+          <h3>TrackBorn</h3>
+          <p>A music-career simulation currently in development and being prepared for Android Early Access. More details will be shared as it gets closer to release.</p>
+          <div class="tag-row"><span>Music</span><span>Simulation</span><span>In development</span></div>
         </div>
       </article>`);
   }
@@ -229,7 +229,7 @@ function enhanceHomePage() {
     let n = null;
     if (title === 'Unwritten Meridian — Book One') n = 2;
     else if (title === 'Online MMA Sim') n = 3;
-    else if (title === 'Untitled Music Project') n = 4;
+    else if (title === 'TrackBorn') n = 4;
     else if (title === '2D Game Project') n = 5;
     if (number && n) number.textContent = String(n).padStart(2,'0');
   });
@@ -254,7 +254,7 @@ function enhanceHomePage() {
     const h = nowItem.querySelector('h3');
     const p = nowItem.querySelector('p');
     if (h) h.textContent = 'Launch preparation, platform work and better QA';
-    if (p) p.textContent = 'My current focus is stabilising Mobile MMA Sim for its major October launch, progressing Unwritten Meridian on Android and continuing selected newer projects. Online MMA Sim is currently paused.';
+    if (p) p.textContent = 'My current focus is post-launch support for Mobile MMA Sim, progressing Unwritten Meridian toward Android launch, preparing TrackBorn for Early Access and continuing the 2D project. Online MMA Sim remains paused.';
   }
 
   const skills = [...document.querySelectorAll('.skill-card')];
@@ -270,14 +270,14 @@ function enhanceHomePage() {
     skills[2].querySelector('p').textContent = 'Growing practical experience with Java, HTML, CSS, JavaScript, SQL, web application logic and desktop/mobile integration work.';
   }
   if (skills[3]) {
-    skills[3].querySelector('h3').textContent = 'Mobile, desktop & 3D';
+    skills[3].querySelector('h3').textContent = 'Mobile, desktop & 2D';
     skills[3].querySelector('p').textContent = 'Android packaging and Play Console workflows, Windows builds/platform preparation, responsive UI work and continued 2D game development.';
   }
 
   const playCard = [...document.querySelectorAll('.publish-card')].find(card => card.querySelector('h3')?.textContent.trim() === 'Google Play');
   if (playCard) {
     const copy = playCard.querySelector('p');
-    if (copy) copy.textContent = 'Mobile MMA Sim and Unwritten Meridian are part of my current Android publishing journey, covering testing tracks, Early Access, store preparation and update workflows.';
+    if (copy) copy.textContent = 'Mobile MMA Sim has now reached full Google Play release. Unwritten Meridian and TrackBorn are the next Android projects moving through release preparation.';
     if (!playCard.querySelector(`[href="${LINKS.play}"]`)) {
       playCard.insertAdjacentHTML('beforeend', `<a class="text-link" href="${LINKS.play}" ${externalAttrs}>View Mobile MMA Sim on Google Play ↗</a>`);
     }
@@ -286,7 +286,7 @@ function enhanceHomePage() {
   if (windowsCard) windowsCard.querySelector('p').textContent = 'Browser/PWA builds, downloadable Windows packages and platform-edition preparation, with Mobile MMA Sim currently the main Windows focus.';
 
   const closingCopy = document.querySelector('.closing-inner > p:not(.eyebrow)');
-  if (closingCopy) closingCopy.textContent = 'The next stage is about turning active testing and Early Access work into stronger public releases while continuing to build new projects without rushing the fundamentals.';
+  if (closingCopy) closingCopy.textContent = 'The next stage is about supporting Mobile MMA Sim after launch, preparing the next Android releases and continuing new projects without rushing the fundamentals.';
   const closingDevlog = document.querySelector('.closing-actions a[href="blog.html"]');
   if (closingDevlog) closingDevlog.innerHTML = 'Read the devlog <span aria-hidden="true">→</span>';
 
@@ -324,7 +324,7 @@ function enhanceDevlog() {
 
   const panel = document.querySelector('.blog-hero-panel');
   const panelCopy = panel?.querySelector('p');
-  if (panelCopy) panelCopy.textContent = 'I’m still early in game development, but the work is getting broader: public releases, Early Access, Android testing, Windows packaging, online systems and multiple games in active development.';
+  if (panelCopy) panelCopy.textContent = 'I’m still early in game development, but the work now includes a full Google Play launch, Android release preparation, platform testing and several projects at different stages.';
   if (panel && !panel.querySelector('.community-inline')) {
     panel.insertAdjacentHTML('beforeend', `<div class="community-inline"><a href="${LINKS.x}" ${externalAttrs}>X / Twitter ↗</a><a href="${LINKS.facebook}" ${externalAttrs}>Facebook ↗</a><a href="${LINKS.discord}" ${externalAttrs}>Discord ↗</a></div>`);
   }
@@ -334,15 +334,15 @@ function enhanceDevlog() {
   if (sectionEyebrow) sectionEyebrow.textContent = 'LATEST DEVLOG';
 
   const blogGrid = document.querySelector('.blog-grid');
-  if (blogGrid && !blogGrid.querySelector('[data-post="october-launch-prep"]')) {
+  if (blogGrid && !blogGrid.querySelector('[data-post="full-launch-v3"]')) {
     blogGrid.insertAdjacentHTML('afterbegin', `
-      <article class="blog-card featured reveal" data-post="october-launch-prep">
+      <article class="blog-card featured reveal" data-post="full-launch-v3">
         <div class="blog-card-media"><img class="logo-contained" src="assets/projects/mobile-mma/icon-512.png" alt="Mobile MMA Sim official artwork" /></div>
         <div class="blog-card-body">
-          <div class="blog-meta"><span>02 OCT 2026</span><i></i><span>LAUNCH PREP</span><i></i><span>MOBILE MMA SIM</span></div>
-          <h3>Mobile MMA Sim moves into major-launch preparation.</h3>
-          <p>Mobile MMA Sim is still in Google Play Early Access while I work toward the major v3.0.0.0 launch target on 13 October. The focus is no longer just adding systems—it is stabilising the full career loop, protecting previous fixes and making the release feel consistent across the game.</p>
-          <div class="release-callout"><strong>Current development focus:</strong> fight-engine realism and balance, career-flow stability, regression testing, save continuity, Android release preparation and the Windows platform edition.</div>
+          <div class="blog-meta"><span>13 OCT 2026</span><i></i><span>FULL RELEASE</span><i></i><span>MOBILE MMA SIM</span></div>
+          <h3>Mobile MMA Sim v3.0.0.0 is fully launched on Google Play.</h3>
+          <p>After Early Access, Mobile MMA Sim has now reached its full Google Play launch with version 3.0.0.0. Reaching this point marks a major step in my development journey, but the game will continue receiving fixes and improvements after launch.</p>
+          <div class="release-callout"><strong>Next phase:</strong> post-launch support, fixing issues found in live careers and continuing to improve the overall experience.</div>
           <div class="community-inline"><a href="${LINKS.play}" ${externalAttrs}>Google Play ↗</a><a href="${LINKS.mmaDemo}" ${externalAttrs}>Free demo ↗</a><a href="${LINKS.mmaFull}" ${externalAttrs}>Full edition ↗</a></div>
         </div>
       </article>
@@ -350,9 +350,9 @@ function enhanceDevlog() {
       <article class="blog-card reveal" data-post="unwritten-android">
         <div class="blog-card-media"><img src="assets/projects/unwritten-meridian/cover-630x500.png" alt="Unwritten Meridian Book One cover artwork" /></div>
         <div class="blog-card-body">
-          <div class="blog-meta"><span>02 OCT 2026</span><i></i><span>ANDROID</span><i></i><span>UNWRITTEN MERIDIAN</span></div>
-          <h3>Unwritten Meridian continues its Android release path.</h3>
-          <p>Book One is already available on itch.io, while the Android version continues through Google Play testing / Early Access preparation. This stage has pushed me further into store requirements, testing windows, release assets and making sure the same story experience remains readable and stable on mobile.</p>
+          <div class="blog-meta"><span>13 OCT 2026</span><i></i><span>ANDROID</span><i></i><span>UNWRITTEN MERIDIAN</span></div>
+          <h3>Unwritten Meridian moves closer to its Android launch.</h3>
+          <p>Book One remains available on itch.io and now has a Google Play listing while Android launch preparation continues. I’m keeping the public update focused on release progress rather than unreleased details.</p>
           <a class="project-link blue-link" href="${LINKS.meridian}" ${externalAttrs}>View Book One on itch.io ↗</a>
         </div>
       </article>
@@ -367,9 +367,9 @@ function enhanceDevlog() {
 
       <article class="blog-card reveal" data-post="music-sim-progress">
         <div class="blog-card-body">
-          <div class="blog-meta"><span>02 OCT 2026</span><i></i><span>IN DEVELOPMENT</span><i></i><span>UNTITLED PROJECT</span></div>
-          <h3>A new music-related project is in development.</h3>
-          <p>I’m working on an unnamed music-related game project. I’m keeping details limited for now and will reveal more when the project is further along.</p>
+          <div class="blog-meta"><span>11 OCT 2026</span><i></i><span>IN DEVELOPMENT</span><i></i><span>TRACKBORN</span></div>
+          <h3>TrackBorn enters Android Early Access preparation.</h3>
+          <p>TrackBorn is now the official name of my music-career simulation project. It is still in development, and I’m keeping public details limited while I prepare the Android Early Access release.</p>
         </div>
       </article>
 
