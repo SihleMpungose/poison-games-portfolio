@@ -7,7 +7,7 @@ The site documents an early-stage but growing game-development journey, public r
 ## Current development snapshot — October 2026
 
 - **Mobile MMA Sim** — v3.0.0.0 full Google Play release is live as of 13 October 2026. Post-launch support and improvement continue.
-- **Unwritten Meridian — Book One** — public on itch.io, with a Google Play listing and Android launch preparation continuing.
+- **Unwritten Meridian — Book One** — official itch.io release scheduled for 16 October 2026. Google Play release delayed and currently expected around November 2026.
 - **Online MMA Sim** — separate online MMA project. Development is currently paused.
 - **TrackBorn** — music-career simulation currently in development and being prepared for Android Early Access; public details remain intentionally limited.
 - **2D Game Project** — early project in development; public details are intentionally limited.
