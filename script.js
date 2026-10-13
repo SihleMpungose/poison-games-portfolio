@@ -119,7 +119,7 @@ function insertSnapshot() {
       </div>
       <div class="snapshot-grid">
         <article class="snapshot-card major reveal"><div><small>MOBILE MMA SIM</small><h3>v3.0 full launch</h3><p>Version 3.0.0.0 is now live on Google Play following Early Access. Development continues with post-launch fixes and improvements.</p></div><strong>Full release • 13 Oct 2026</strong></article>
-        <article class="snapshot-card story reveal"><div><small>UNWRITTEN MERIDIAN</small><h3>itch.io launch • 16 Oct</h3><p>Book One is scheduled for its official itch.io release on 16 October. The Google Play release has been delayed and is now expected around November 2026.</p></div><strong>itch.io • 16 Oct 2026</strong></article>
+        <article class="snapshot-card story reveal"><div><small>UNWRITTEN MERIDIAN</small><h3>Early Access on itch.io + Google Play</h3><p>Book One is currently in Early Access on both itch.io and Google Play. The official itch.io release is planned for 16 October, with the full Google Play release expected around November.</p></div><strong>Early Access • itch.io + Google Play</strong></article>
         <article class="snapshot-card alpha reveal"><div><small>ONLINE MMA SIM</small><h3>Development paused</h3><p>A separate online MMA project that is currently paused while I focus on other releases and development priorities.</p></div><strong>Paused • No launch date announced</strong></article>
         <article class="snapshot-card music reveal"><div><small>TRACKBORN</small><h3>Early Access preparation</h3><p>TrackBorn is a music-career simulation currently being prepared for Android Early Access. Public details remain intentionally limited for now.</p></div><strong>In development • Android</strong></article>
       </div>
@@ -144,7 +144,7 @@ function enhanceHomePage() {
   if (showcase) {
     showcase.innerHTML = `
       <div class="showcase-row active"><span>01</span><div><strong>Mobile MMA Sim</strong><small>v3.0.0.0 • Full release</small></div><b>↗</b></div>
-      <div class="showcase-row"><span>02</span><div><strong>Unwritten Meridian</strong><small>itch.io • 16 Oct • Play delayed</small></div><b>↗</b></div>
+      <div class="showcase-row"><span>02</span><div><strong>Unwritten Meridian</strong><small>Early Access • itch.io + Google Play</small></div><b>↗</b></div>
       <div class="showcase-row"><span>03</span><div><strong>Online MMA Sim</strong><small>Development paused</small></div><b>↗</b></div>
       <div class="showcase-row"><span>04</span><div><strong>TrackBorn</strong><small>Early Access preparation</small></div><b>↗</b></div>
       <div class="showcase-row"><span>05</span><div><strong>2D Game Project</strong><small>In development</small></div><b>↗</b></div>`;
@@ -179,11 +179,11 @@ function enhanceHomePage() {
   const meridianCard = [...document.querySelectorAll('.project-card')].find(card => card.querySelector('h3')?.textContent.includes('Unwritten Meridian'));
   if (meridianCard) {
     const status = meridianCard.querySelector('.project-status');
-    if (status) status.textContent = 'itch.io • 16 Oct 2026';
+    if (status) status.textContent = 'Early Access • itch.io + Google Play';
     const copy = meridianCard.querySelector('.project-content > p');
-    if (copy) copy.textContent = 'A choice-driven interactive-fiction project. Book One is scheduled for its official itch.io release on 16 October 2026, while the Google Play release has been delayed to around November.';
+    if (copy) copy.textContent = 'A choice-driven interactive-fiction project. Book One is currently in Early Access on both itch.io and Google Play. The official itch.io release is planned for 16 October 2026, with the full Google Play release expected around November.';
     if (!meridianCard.querySelector('.project-update')) {
-      meridianCard.querySelector('.project-content')?.insertAdjacentHTML('beforeend', '<div class="project-update"><strong>Current milestone:</strong> Official itch.io release is set for 16 October 2026. The Google Play release is delayed and now expected around November.</div>');
+      meridianCard.querySelector('.project-content')?.insertAdjacentHTML('beforeend', '<div class="project-update"><strong>Current milestone:</strong> Book One is currently in Early Access on both itch.io and Google Play. Official itch.io release is planned for 16 October 2026, with full Google Play release expected around November.</div>');
     }
   }
 
@@ -254,7 +254,7 @@ function enhanceHomePage() {
     const h = nowItem.querySelector('h3');
     const p = nowItem.querySelector('p');
     if (h) h.textContent = 'Launch preparation, platform work and better QA';
-    if (p) p.textContent = 'My current focus is post-launch support for Mobile MMA Sim, the 16 October itch.io release of Unwritten Meridian, later Google Play preparation, TrackBorn Early Access preparation and the 2D project. Online MMA Sim remains paused.';
+    if (p) p.textContent = 'My current focus is post-launch support for Mobile MMA Sim, moving Unwritten Meridian from Early Access toward its official itch.io release and later full Google Play release, TrackBorn Early Access preparation and the 2D project. Online MMA Sim remains paused.';
   }
 
   const skills = [...document.querySelectorAll('.skill-card')];
@@ -277,7 +277,7 @@ function enhanceHomePage() {
   const playCard = [...document.querySelectorAll('.publish-card')].find(card => card.querySelector('h3')?.textContent.trim() === 'Google Play');
   if (playCard) {
     const copy = playCard.querySelector('p');
-    if (copy) copy.textContent = 'Mobile MMA Sim has reached full Google Play release. Unwritten Meridian will release first on itch.io on 16 October, with Google Play expected around November; TrackBorn remains in Early Access preparation.';
+    if (copy) copy.textContent = 'Mobile MMA Sim has reached full Google Play release. Unwritten Meridian is currently in Early Access on both itch.io and Google Play, with the official itch.io release planned for 16 October and full Google Play release expected around November. TrackBorn remains in Early Access preparation.';
     if (!playCard.querySelector(`[href="${LINKS.play}"]`)) {
       playCard.insertAdjacentHTML('beforeend', `<a class="text-link" href="${LINKS.play}" ${externalAttrs}>View Mobile MMA Sim on Google Play ↗</a>`);
     }
@@ -350,9 +350,9 @@ function enhanceDevlog() {
       <article class="blog-card reveal" data-post="unwritten-android">
         <div class="blog-card-media"><img src="assets/projects/unwritten-meridian/cover-630x500.png" alt="Unwritten Meridian Book One cover artwork" /></div>
         <div class="blog-card-body">
-          <div class="blog-meta"><span>13 OCT 2026</span><i></i><span>RELEASE UPDATE</span><i></i><span>UNWRITTEN MERIDIAN</span></div>
-          <h3>Unwritten Meridian keeps its itch.io launch while Google Play is delayed.</h3>
-          <p>Book One is scheduled for its official itch.io release on 16 October 2026. The Google Play release has been delayed and is now expected around November, so the two platform releases will no longer happen together.</p>
+          <div class="blog-meta"><span>13 OCT 2026</span><i></i><span>EARLY ACCESS</span><i></i><span>UNWRITTEN MERIDIAN</span></div>
+          <h3>Unwritten Meridian continues in Early Access on itch.io and Google Play.</h3>
+          <p>Book One is currently available in Early Access on both itch.io and Google Play. The official itch.io release is planned for 16 October 2026, while the full Google Play release is expected around November.</p>
           <a class="project-link blue-link" href="${LINKS.meridian}" ${externalAttrs}>View Book One on itch.io ↗</a>
         </div>
       </article>
