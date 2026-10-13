@@ -2,14 +2,14 @@
 
 Static personal game-development portfolio for **SihleM / Poison Games**.
 
-The site documents an early-stage but growing game-development journey, public releases, Early Access work, testing, platform preparation, a separate devlog, and official Poison Games community links.
+The site documents an early-stage but growing game-development journey, public releases, launch work, testing, platform preparation, a separate devlog, and official Poison Games community links.
 
 ## Current development snapshot — October 2026
 
-- **Mobile MMA Sim** — Google Play Early Access / itch.io release, with the major v3.0.0.0 launch update targeted for 13 October 2026. Current work includes stability, fight-system realism and balance, regression testing, save continuity and Windows platform preparation.
-- **Unwritten Meridian — Book One** — public on itch.io, with Android / Google Play testing and release preparation continuing.
+- **Mobile MMA Sim** — v3.0.0.0 full Google Play release is live as of 13 October 2026. Post-launch support and improvement continue.
+- **Unwritten Meridian — Book One** — public on itch.io, with a Google Play listing and Android launch preparation continuing.
 - **Online MMA Sim** — separate online MMA project. Development is currently paused.
-- **Untitled Music Project** — unnamed music-related game project currently in development; public details are intentionally limited.
+- **TrackBorn** — music-career simulation currently in development and being prepared for Android Early Access; public details remain intentionally limited.
 - **2D Game Project** — early project in development; public details are intentionally limited.
 
 ## Live portfolio
