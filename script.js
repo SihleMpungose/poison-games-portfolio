@@ -121,7 +121,7 @@ function insertSnapshot() {
         <article class="snapshot-card major reveal"><div><small>MOBILE MMA SIM</small><h3>v3.0 full launch</h3><p>Version 3.0.0.0 is now live on Google Play following Early Access. Development continues with post-launch fixes and improvements.</p></div><strong>Full release • 13 Oct 2026</strong></article>
         <article class="snapshot-card story reveal"><div><small>UNWRITTEN MERIDIAN</small><h3>Early Access on itch.io + Google Play</h3><p>Book One is currently in Early Access on both itch.io and Google Play. The official itch.io release is planned for 16 October, with the full Google Play release expected around November.</p></div><strong>Early Access • itch.io + Google Play</strong></article>
         <article class="snapshot-card alpha reveal"><div><small>ONLINE MMA SIM</small><h3>Development paused</h3><p>A separate online MMA project that is currently paused while I focus on other releases and development priorities.</p></div><strong>Paused • No launch date announced</strong></article>
-        <article class="snapshot-card music reveal"><div><small>TRACKBORN</small><h3>Early Access preparation</h3><p>TrackBorn is a music-career simulation currently being prepared for Android Early Access. Public details remain intentionally limited for now.</p></div><strong>In development • Android</strong></article>
+        <article class="snapshot-card music reveal"><div><small>TRACKBORN</small><h3>In development</h3><p>TrackBorn is still in active development and is not yet close to Early Access. If progress goes well, I hope to present an Early Access build in November after Unwritten Meridian launches on Android.</p></div><strong>In development • November goal</strong></article>
       </div>
     </section>`);
 }
@@ -146,7 +146,7 @@ function enhanceHomePage() {
       <div class="showcase-row active"><span>01</span><div><strong>Mobile MMA Sim</strong><small>v3.0.0.0 • Full release</small></div><b>↗</b></div>
       <div class="showcase-row"><span>02</span><div><strong>Unwritten Meridian</strong><small>Early Access • itch.io + Google Play</small></div><b>↗</b></div>
       <div class="showcase-row"><span>03</span><div><strong>Online MMA Sim</strong><small>Development paused</small></div><b>↗</b></div>
-      <div class="showcase-row"><span>04</span><div><strong>TrackBorn</strong><small>Early Access preparation</small></div><b>↗</b></div>
+      <div class="showcase-row"><span>04</span><div><strong>TrackBorn</strong><small>In development • November goal</small></div><b>↗</b></div>
       <div class="showcase-row"><span>05</span><div><strong>2D Game Project</strong><small>In development</small></div><b>↗</b></div>`;
   }
 
@@ -214,9 +214,9 @@ function enhanceHomePage() {
           <div class="visual-caption"><small>TRACKBORN</small><strong>TB</strong></div>
         </div>
         <div class="project-content compact">
-          <div class="project-kicker"><span>TRACKBORN</span><span>Early Access prep</span></div>
+          <div class="project-kicker"><span>TRACKBORN</span><span>In development</span></div>
           <h3>TrackBorn</h3>
-          <p>A music-career simulation currently in development and being prepared for Android Early Access. More details will be shared as it gets closer to release.</p>
+          <p>TrackBorn is still in development and not yet close to Early Access. I hope to present an Early Access build in November, after Unwritten Meridian launches on Android.</p>
           <div class="tag-row"><span>Music</span><span>Simulation</span><span>In development</span></div>
         </div>
       </article>`);
@@ -254,7 +254,7 @@ function enhanceHomePage() {
     const h = nowItem.querySelector('h3');
     const p = nowItem.querySelector('p');
     if (h) h.textContent = 'Launch preparation, platform work and better QA';
-    if (p) p.textContent = 'My current focus is post-launch support for Mobile MMA Sim, moving Unwritten Meridian from Early Access toward its official itch.io release and later full Google Play release, TrackBorn Early Access preparation and the 2D project. Online MMA Sim remains paused.';
+    if (p) p.textContent = 'My current focus is post-launch support for Mobile MMA Sim, moving Unwritten Meridian from Early Access toward its official releases, continuing TrackBorn development and the 2D project. Online MMA Sim remains paused.';
   }
 
   const skills = [...document.querySelectorAll('.skill-card')];
@@ -277,7 +277,7 @@ function enhanceHomePage() {
   const playCard = [...document.querySelectorAll('.publish-card')].find(card => card.querySelector('h3')?.textContent.trim() === 'Google Play');
   if (playCard) {
     const copy = playCard.querySelector('p');
-    if (copy) copy.textContent = 'Mobile MMA Sim has reached full Google Play release. Unwritten Meridian is currently in Early Access on both itch.io and Google Play, with the official itch.io release planned for 16 October and full Google Play release expected around November. TrackBorn remains in Early Access preparation.';
+    if (copy) copy.textContent = 'Mobile MMA Sim has reached full Google Play release. Unwritten Meridian is currently in Early Access on both itch.io and Google Play, with the official itch.io release planned for 16 October and full Google Play release expected around November. TrackBorn is still in development, with a possible Early Access build presentation hoped for later in November.';
     if (!playCard.querySelector(`[href="${LINKS.play}"]`)) {
       playCard.insertAdjacentHTML('beforeend', `<a class="text-link" href="${LINKS.play}" ${externalAttrs}>View Mobile MMA Sim on Google Play ↗</a>`);
     }
@@ -368,8 +368,8 @@ function enhanceDevlog() {
       <article class="blog-card reveal" data-post="music-sim-progress">
         <div class="blog-card-body">
           <div class="blog-meta"><span>11 OCT 2026</span><i></i><span>IN DEVELOPMENT</span><i></i><span>TRACKBORN</span></div>
-          <h3>TrackBorn enters Android Early Access preparation.</h3>
-          <p>TrackBorn is now the official name of my music-career simulation project. It is still in development, and I’m keeping public details limited while I prepare the Android Early Access release.</p>
+          <h3>TrackBorn remains in development.</h3>
+          <p>TrackBorn is still in active development and is not yet close to Early Access. If development progresses as hoped, I plan to present an Early Access build in November after Unwritten Meridian’s Android launch. Public details remain limited for now.</p>
         </div>
       </article>
 
