@@ -2,22 +2,23 @@
 
 Static personal game-development portfolio for **SihleM / Poison Games**.
 
-The site documents an early-stage but growing game-development journey, public releases, launch work, testing, platform preparation, a separate devlog, and official Poison Games community links.
+The site is structured so each section has a different job instead of repeating the same project status:
 
-## Current development snapshot — October 2026
+- **Now** — what I am actively working on.
+- **Games** — what each project is and its public status.
+- **Journey** — how my development approach has changed over time.
+- **Skills** — areas I am actively practising.
+- **Publishing** — what I have learned from distribution and release work.
+- **Community** — where each Poison Games channel is used.
+- **Devlog** — dated updates and decisions.
 
-- **Mobile MMA Sim** — v3.0.0.0 full Google Play release is live as of 13 October 2026. Post-launch support and improvement continue.
-- **Unwritten Meridian — Book One** — currently in Early Access on both itch.io and Google Play. Official itch.io release planned for 16 October 2026; full Google Play release expected around November 2026.
-- **Online MMA Sim** — separate online MMA project. Development is currently paused.
-- **TrackBorn** — still in active development and not yet close to Early Access. The current hope is to present an Early Access build in November 2026, after Unwritten Meridian launches on Android; public details remain intentionally limited.
-- **2D Game Project** — early project in development; public details are intentionally limited.
+## Current focus — 18 October 2026
 
-## Live portfolio
-
-- Portfolio: https://sihlempungose.github.io/poison-games-portfolio/
-- Devlog: https://sihlempungose.github.io/poison-games-portfolio/blog.html
-
-The repository is also connected to Cloudflare for automatic production deployment from the main branch.
+- **Mobile MMA Sim** — full release; current priority is post-launch support, regression testing and carefully shipping fixes.
+- **Unwritten Meridian — Book One** — currently in Early Access on both itch.io and Google Play; current priority is Early Access support and release readiness.
+- **TrackBorn** — development paused while current released/player-facing games receive support.
+- **Online MMA Sim** — development paused.
+- **2D Game Project** — early development; public details remain intentionally limited.
 
 ## Public game links
 
@@ -36,19 +37,19 @@ The repository is also connected to Cloudflare for automatic production deployme
 ## Brand identity
 
 - **Poison Games** — public game brand
-- **SihleM** — developer identity, including Google Play
+- **SihleM** — developer identity
 - **Sihle Mpungose** — formal / professional identity outside the game brand
 
 The visual system uses a near-black base with controlled red and blue accents. Public game-development and side-project work shown on the site is independent personal work created outside employment and is not affiliated with the user's employer or any organization they work for.
 
 ## Files
 
-- `index.html` — landing-page portfolio
-- `blog.html` — separate Poison Games devlog
+- `index.html` — portfolio and current-focus overview
+- `blog.html` — chronological Poison Games devlog
 - `styles.css` — shared dark/red/blue visual system
-- `script.js` — navigation, current project status, October 2026 development snapshot, social/community links and devlog enhancements
-- `assets/` — favicon and official project artwork used by the portfolio
+- `script.js` — menu, reveal effects, section highlighting, scroll progress and current year
+- `assets/` — favicon and official public project artwork
 
 ## Hosting
 
-The project can be published from the repository root. The current production flow is connected to the `main` branch so repository updates can be deployed automatically by the connected hosting workflow.
+The production site is connected to the `main` branch. Updates pushed to the repository are picked up by the existing deployment workflow automatically.
