@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Poison Games devlog — October 2026 launch progress, new projects and lessons from SihleM's game-development journey." />
+  <meta name="description" content="Poison Games devlog — release notes, development decisions and lessons from SihleM's independent game-development journey." />
   <meta name="theme-color" content="#06070b" />
   <title>Devlog | Poison Games — SihleM</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
@@ -19,15 +19,19 @@
       <span class="brand-mark" aria-hidden="true"><b>P</b><i>G</i></span>
       <span class="brand-copy"><strong>Poison Games</strong><small>Games by SihleM</small></span>
     </a>
+
     <button class="menu-btn" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+
     <nav class="nav" aria-label="Primary navigation">
-      <a href="index.html#projects">Projects</a>
+      <a href="index.html#focus">Now</a>
+      <a href="index.html#projects">Games</a>
       <a href="index.html#journey">Journey</a>
       <a href="index.html#skills">Skills</a>
       <a href="index.html#publishing">Publishing</a>
-      <a href="index.html#about">About</a>
-      <a class="active" href="blog.html">Blog</a>
+      <a href="index.html#community">Community</a>
+      <a class="active" href="blog.html">Devlog</a>
     </nav>
+
     <span class="header-badge">Dev journal</span>
   </header>
 
@@ -35,60 +39,101 @@
     <section class="blog-hero section-shell">
       <div class="blog-hero-copy reveal">
         <p class="eyebrow">POISON GAMES / DEVLOG</p>
-        <h1>Release notes.<br><span>Development in motion.</span></h1>
-        <p>A public record of releases, launch milestones, selected project updates and lessons from my independent game-development journey as SihleM.</p>
+        <h1>Individual updates.<br><span>Not another portfolio page.</span></h1>
+        <p>The portfolio explains what I build and what I am learning. The devlog is different: it records specific release events, priority changes and decisions as they happen.</p>
       </div>
+
       <aside class="blog-hero-panel reveal">
-        <small>WHY THIS PAGE EXISTS</small>
-        <strong>Not just what I build—what I learn while building it.</strong>
-        <p>I’m still early in game development. This journal is a record of progress, problems solved and lessons I can carry into the next project.</p>
+        <small>CURRENT EDITORIAL RULE</small>
+        <strong>One post = one meaningful update.</strong>
+        <p>I keep these posts focused so visitors can understand what changed without reading the same project summary again.</p>
+        <div class="community-inline">
+          <a href="https://x.com/PoisonGamesSM" target="_blank" rel="noopener noreferrer">X / Twitter ↗</a>
+          <a href="https://www.facebook.com/share/14o7RKUEV2E/" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+          <a href="https://discord.gg/B3WQaUgSg" target="_blank" rel="noopener noreferrer">Discord ↗</a>
+        </div>
       </aside>
     </section>
 
     <section class="blog-section section-shell">
       <div class="blog-section-head reveal">
-        <div><p class="eyebrow">LATEST NOTES</p><h2>Development journal</h2></div>
-        <p>Updates here focus on my personal game-development work and are separate from my employment or any organization I work for.</p>
+        <div><p class="eyebrow">LATEST DEVLOG</p><h2>What changed.</h2></div>
+        <p>Posts are chronological and intentionally narrower than the main portfolio sections.</p>
       </div>
 
       <div class="blog-grid">
         <article class="blog-card featured reveal">
-          <div class="blog-card-media"><img src="assets/projects/unwritten-meridian/cover-630x500.png" alt="Unwritten Meridian Book One cover artwork" /></div>
+          <div class="blog-card-media"><img class="logo-contained" src="assets/projects/mobile-mma/icon-512.png" alt="Mobile MMA Sim official artwork" /></div>
           <div class="blog-card-body">
-            <div class="blog-meta"><span>13 OCT 2026</span><i></i><span>EARLY ACCESS</span><i></i><span>INTERACTIVE FICTION</span></div>
-            <h3>Unwritten Meridian — Book One is in Early Access on both platforms.</h3>
-            <p>Book One is currently in Early Access on both itch.io and Google Play. The official itch.io release is planned for 16 October 2026, while the full Google Play release is expected around November.</p>
-            <a class="project-link" href="https://sihlem.itch.io/unwritten-meridian" target="_blank" rel="noopener noreferrer">View Unwritten Meridian on itch.io ↗</a>
+            <div class="blog-meta"><span>18 OCT 2026</span><i></i><span>PRIORITIES</span><i></i><span>POISON GAMES</span></div>
+            <h3>Current focus: support first, expansion later.</h3>
+            <p>I am narrowing my active workload. Mobile MMA Sim is now in post-launch support, and Unwritten Meridian remains the other main priority while it is in Early Access. TrackBorn and Online MMA Sim are paused so I can give released and player-facing work proper attention instead of splitting development across too many games.</p>
+            <div class="release-callout"><strong>What this changes:</strong> fewer parallel projects, more time for testing, fixes, release quality and player support.</div>
           </div>
         </article>
 
         <article class="blog-card reveal">
           <div class="blog-card-media"><img class="logo-contained" src="assets/projects/mobile-mma/icon-512.png" alt="Mobile MMA Sim official artwork" /></div>
           <div class="blog-card-body">
-            <div class="blog-meta"><span>30 AUG 2026</span><i></i><span>TESTING</span><i></i><span>ANDROID</span></div>
-            <h3>Taking Mobile MMA Sim into Android testing.</h3>
-            <p>Moving from a browser build toward Google Play testing introduced a new set of practical lessons: packaging, tester access, release tracks, version changes and testing the same game outside the environment where it was originally built.</p>
-            <a class="project-link" href="https://sihlem.itch.io/mobilemmasim-full/devlog/1646530/mobile-mma-sim-android-testers-wanted" target="_blank" rel="noopener noreferrer">Read the itch.io devlog ↗</a>
+            <div class="blog-meta"><span>13 OCT 2026</span><i></i><span>FULL RELEASE</span><i></i><span>MOBILE MMA SIM</span></div>
+            <h3>Mobile MMA Sim reached full Google Play release.</h3>
+            <p>Version 3.0.0.0 marked the move from Early Access into full release on Google Play. The important lesson now is that launch is not the finish line: support, regression testing and careful fixes become part of the product after players are already inside it.</p>
+            <div class="community-inline">
+              <a href="https://play.google.com/store/apps/details?id=com.mobilemmasim.myapp" target="_blank" rel="noopener noreferrer">Google Play ↗</a>
+              <a href="https://sihlem.itch.io/mobilemmasim-full" target="_blank" rel="noopener noreferrer">itch.io full edition ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card reveal">
+          <div class="blog-card-media"><img src="assets/projects/unwritten-meridian/cover-630x500.png" alt="Unwritten Meridian Book One cover artwork" /></div>
+          <div class="blog-card-body">
+            <div class="blog-meta"><span>18 OCT 2026</span><i></i><span>EARLY ACCESS</span><i></i><span>UNWRITTEN MERIDIAN</span></div>
+            <h3>Unwritten Meridian remains in Early Access on both platforms.</h3>
+            <p>Book One is currently available in Early Access on itch.io and Google Play. My focus is on supporting the current build and preparing it carefully for the next release stage rather than publishing a rushed date update.</p>
+            <a class="project-link blue-link" href="https://sihlem.itch.io/unwritten-meridian" target="_blank" rel="noopener noreferrer">View on itch.io ↗</a>
           </div>
         </article>
 
         <article class="blog-card reveal">
           <div class="blog-card-body">
-            <div class="blog-meta"><span>DEV JOURNEY</span><i></i><span>LESSONS</span></div>
-            <h3>Why I’m keeping the beginner label.</h3>
-            <p>I want this portfolio to show growth without pretending that every system I build is expert-level work. The useful part of being at this stage is that every project exposes a new gap: architecture, UI, testing, release preparation or simply learning when a feature has become too complicated. The goal is to make the next build cleaner than the last.</p>
+            <div class="blog-meta"><span>18 OCT 2026</span><i></i><span>PAUSED</span><i></i><span>TRACKBORN</span></div>
+            <h3>TrackBorn development is paused.</h3>
+            <p>I am putting TrackBorn on hold while I support Mobile MMA Sim and Unwritten Meridian. The project is still part of Poison Games, but I do not want to promise an Early Access timeline while it is not receiving active development time.</p>
+          </div>
+        </article>
+
+        <article class="blog-card reveal">
+          <div class="blog-card-body">
+            <div class="blog-meta"><span>02 OCT 2026</span><i></i><span>PAUSED</span><i></i><span>ONLINE MMA SIM</span></div>
+            <h3>Online MMA Sim remains paused.</h3>
+            <p>The project is not cancelled, but it is not part of the active development workload. I will only bring it back into public updates when development actually resumes.</p>
+          </div>
+        </article>
+
+        <article class="blog-card reveal">
+          <div class="blog-card-body">
+            <div class="blog-meta"><span>SEP 2026</span><i></i><span>LESSON</span><i></i><span>PUBLISHING</span></div>
+            <h3>Public builds changed how I think about “done”.</h3>
+            <p>Testing a game yourself is different from supporting a build after other people can install it. Store tracks, device behaviour, versioning, saves and player reports have made release discipline a much bigger part of how I approach development.</p>
           </div>
         </article>
       </div>
 
-      <div class="blog-note reveal"><strong>This devlog will keep growing as the projects move through testing, release preparation and new development stages.</strong> The landing page stays focused on the portfolio; development notes live here so the two purposes do not compete with each other.</div>
+      <div class="blog-note reveal"><strong>Portfolio vs devlog:</strong> the portfolio is the stable overview; this page records dated changes. That separation keeps the site useful instead of repeating the same status paragraph in every section.</div>
     </section>
   </main>
 
   <footer>
     <div class="section-shell footer-inner">
       <div class="footer-brand"><span class="brand-mark" aria-hidden="true"><b>P</b><i>G</i></span><div><strong>Poison Games</strong><p>Games by SihleM</p></div></div>
-      <div class="footer-center"><a href="index.html">Portfolio</a> · <a href="https://sihlem.itch.io/" target="_blank" rel="noopener noreferrer">itch.io</a></div>
+      <div class="footer-center">
+        <a href="index.html">Portfolio</a>
+        <a href="https://x.com/PoisonGamesSM" target="_blank" rel="noopener noreferrer">X</a>
+        <a href="https://www.facebook.com/share/14o7RKUEV2E/" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://discord.gg/B3WQaUgSg" target="_blank" rel="noopener noreferrer">Discord</a>
+        <a href="https://sihlem.itch.io/" target="_blank" rel="noopener noreferrer">itch.io</a>
+      </div>
       <div class="footer-note"><p>Sihle Mpungose</p><p>© <span id="year"></span></p></div>
     </div>
   </footer>
