@@ -12,13 +12,15 @@ The site is structured so each section has a different job instead of repeating 
 - **Community** — where each Poison Games channel is used.
 - **Devlog** — dated updates and decisions.
 
-## Current focus — 18 October 2026
+## Current focus — 29 October 2026
 
-- **Mobile MMA Sim** — full release; current priority is post-launch support, regression testing and carefully shipping fixes.
-- **Unwritten Meridian — Book One** — currently in Early Access on both itch.io and Google Play; current priority is Early Access support and release readiness.
-- **TrackBorn** — development paused while current released/player-facing games receive support.
+- **Mobile MMA Sim** — full release; current priority is post-launch support, fight-system calibration, save/loading reliability, UI responsiveness and careful regression testing.
+- **Unwritten Meridian — Book One** — currently in Early Access on both itch.io and Google Play; current priority is Early Access support, mobile presentation and release readiness.
+- **TrackBorn** — development paused while Mobile MMA Sim and Unwritten Meridian receive support.
 - **Online MMA Sim** — development paused.
 - **2D Game Project** — early development; public details remain intentionally limited.
+- **Mobile MMA Sim demo** — release hardening in progress; itch.io release is planned around 7 November and Android around 15–20 November, subject to Google Play approval.
+- **Game jams** — Poison Games is participating in game jams; entry titles and game concepts remain intentionally under wraps until ready to reveal.
 
 ## Public game links
 
