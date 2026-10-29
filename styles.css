@@ -654,3 +654,61 @@ footer{background:#05070b}
   .paused-strip p{grid-column:auto}
   .focus-card{min-height:auto;padding:22px}
 }
+
+
+/* ===== Latest news ===== */
+.news-section{padding-top:88px}
+.news-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.news-card{
+  position:relative;
+  min-height:260px;
+  padding:26px;
+  display:flex;
+  flex-direction:column;
+  border:1px solid rgba(128,148,182,.14);
+  border-radius:20px;
+  background:linear-gradient(145deg,rgba(16,21,31,.93),rgba(8,11,17,.97));
+  transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease;
+}
+.news-card:hover{
+  transform:translateY(-3px);
+  border-color:rgba(79,131,255,.24);
+  box-shadow:0 24px 65px rgba(0,0,0,.22);
+}
+.news-card.jam-news{
+  border-color:rgba(255,64,89,.18);
+  background:
+    radial-gradient(circle at 88% 14%,rgba(255,64,89,.10),transparent 26%),
+    linear-gradient(145deg,rgba(20,14,21,.95),rgba(8,11,17,.97));
+}
+.news-meta{
+  display:flex;gap:9px;align-items:center;flex-wrap:wrap;
+  color:#8996aa;
+  font:700 9px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  letter-spacing:.09em;text-transform:uppercase;
+}
+.news-meta i{width:4px;height:4px;border-radius:50%;background:var(--blue)}
+.news-card:nth-child(even) .news-meta i{background:var(--red)}
+.news-card h3{
+  margin:18px 0 12px;
+  font-size:clamp(24px,2.6vw,36px);
+  line-height:1.06;
+  letter-spacing:-.04em;
+}
+.news-card p{margin:0;color:var(--muted);font-size:14px;line-height:1.72}
+.news-card .text-link{margin-top:auto;padding-top:20px}
+.news-status-row{margin-top:auto;padding-top:22px;display:flex;flex-wrap:wrap;gap:8px}
+.news-status-row span,.news-badge{
+  display:inline-flex;
+  align-items:center;
+  min-height:30px;
+  padding:0 10px;
+  border:1px solid rgba(128,148,182,.14);
+  border-radius:999px;
+  background:rgba(255,255,255,.02);
+  color:#aeb9ca;
+  font-size:10px;
+  font-weight:750;
+}
+.news-badge{margin-top:auto;align-self:flex-start;border-color:rgba(255,64,89,.20);color:#ff9cab}
+@media(max-width:820px){.news-grid{grid-template-columns:1fr}}
