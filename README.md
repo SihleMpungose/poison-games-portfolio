@@ -12,15 +12,22 @@ The site is structured so each section has a different job instead of repeating 
 - **Community** — where each Poison Games channel is used.
 - **Devlog** — dated updates and decisions.
 
-## Current focus — 29 October 2026
+## Current focus — 30 October 2026
 
 - **Mobile MMA Sim** — full release; current priority is post-launch support, fight-system calibration, save/loading reliability, UI responsiveness and careful regression testing.
 - **Unwritten Meridian — Book One** — currently in Early Access on both itch.io and Google Play; current priority is Early Access support, mobile presentation and release readiness.
-- **TrackBorn** — development paused while Mobile MMA Sim and Unwritten Meridian receive support.
-- **Online MMA Sim** — development paused.
-- **2D Game Project** — early development; public details remain intentionally limited.
+- **TrackBorn** — paused while current releases receive support, but confirmed for future development from December 2026 or during 2027.
+- **Online MMA concept** — moved to backlog; no near-term development is planned.
+- **Seed Isles** — confirmed 2D title in early development; planned to continue from December 2026 or during 2027, with public details still intentionally limited.
 - **Mobile MMA Sim demo** — release hardening in progress; itch.io release is planned around 7 November and Android around 15–20 November, subject to Google Play approval.
 - **Beneath the Borrowed Light** — live on itch.io as a free browser release created for AI Browser Game Jam 5.
+
+## Roadmap structure
+
+- **Active support:** Mobile MMA Sim and Unwritten Meridian.
+- **Confirmed future development:** TrackBorn and Seed Isles.
+- **Backlog:** Online MMA concept.
+- **Concept drafts:** unnamed simulation, strategy, story-driven and long-term 3D ideas shown only at a high level; these are not announced games or production commitments.
 
 ## Public game links
 
