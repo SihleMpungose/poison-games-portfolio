@@ -20,7 +20,7 @@ The site is structured so each section has a different job instead of repeating 
 - **Online MMA Sim** — development paused.
 - **2D Game Project** — early development; public details remain intentionally limited.
 - **Mobile MMA Sim demo** — release hardening in progress; itch.io release is planned around 7 November and Android around 15–20 November, subject to Google Play approval.
-- **Game jams** — Poison Games is participating in game jams; entry titles and game concepts remain intentionally under wraps until ready to reveal.
+- **Beneath the Borrowed Light** — live on itch.io as a free browser release created for AI Browser Game Jam 5.
 
 ## Public game links
 
@@ -29,6 +29,8 @@ The site is structured so each section has a different job instead of repeating 
 - Mobile MMA Sim — Google Play: https://play.google.com/store/apps/details?id=com.mobilemmasim.myapp
 - Unwritten Meridian — Book One: https://sihlem.itch.io/unwritten-meridian
 - Unwritten Meridian — Google Play Early Access: https://play.google.com/store/apps/details?id=com.unwritten_meridian_book1.myapp
+- Beneath the Borrowed Light: https://sihlem.itch.io/beneath-the-borrowed-light
+- AI Browser Game Jam 5: https://itch.io/jam/ai-jam-5
 - Poison Games on itch.io: https://sihlem.itch.io/
 
 ## Official Poison Games community links
