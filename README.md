@@ -65,3 +65,15 @@ The visual system uses a near-black base with controlled red and blue accents. P
 ## Hosting
 
 The production site is connected to the `main` branch. Updates pushed to the repository are picked up by the existing deployment workflow automatically.
+
+
+## Legal hub
+
+Official legal pages are hosted under `/legal/`.
+
+- Mobile MMA Sim — Full Edition: Terms + Privacy
+- Mobile MMA Sim — Demo: Terms + Privacy
+- Unwritten Meridian — Book One: Terms + Privacy
+- Beneath the Borrowed Light: Terms + Privacy
+
+TrackBorn and Seed Isles will receive public legal pages when their release builds and data practices are ready to describe accurately.
