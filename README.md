@@ -14,18 +14,20 @@ The site is structured so each section has a different job instead of repeating 
 
 ## Current focus — 17 November 2026
 
-- **Mobile MMA Sim** — full release; current priority is post-launch support, fight-system calibration, save/loading reliability, UI responsiveness and careful regression testing.
-- **Unwritten Meridian — Book One** — currently in Early Access on both itch.io and Google Play; current priority is Early Access support, mobile presentation and release readiness.
-- **TrackBorn** — in development; no planned release date and no public presentation/reveal date announced.
+- **Mobile MMA Sim — mobile Full Edition** — released and actively supported; recent installation, updating and save reliability work currently appears stable, with continued monitoring.
+- **Unwritten Meridian — Book One** — remains in Early Access; a fresh focused testing window is active, with no new public version or wider-release date claimed from that testing.
+- **TrackBorn** — active development; a recent internal PC build reached v0.6.0 with automated progression/regression checks passing. Windows testing is still pending. No planned release or presentation/reveal date.
 - **Online MMA concept** — moved to backlog; no near-term development is planned.
-- **Seed Isles** — confirmed 2D title in development; no planned release date and public details remain intentionally limited.
+- **Seed Isles** — confirmed 2D title in private development. No newer public build/testing milestone is being announced yet; no planned release or presentation/reveal date.
 - **Mobile MMA Sim demo** — available on itch.io; Android launch is targeted for **30 November 2026**, subject to Google Play testing, review and approval.
-- **Beneath the Borrowed Light** — live on itch.io as a free browser release created for AI Browser Game Jam 5.
+- **Mobile MMA Sim — PC Edition** — Windows-first internal v1.0.0 candidate; 106/108 bundled and independent automated checks passed, with two intermittent failures and full Windows/manual acceptance still open.
+- **Beneath the Borrowed Light** — live on itch.io; internal v0.23.7 audio-focused candidate passed 150 automated checks, with real-browser/device listening still required before publication.
 
 ## Roadmap structure
 
-- **Active support:** Mobile MMA Sim and Unwritten Meridian.
-- **In development:** TrackBorn and Seed Isles, both without announced release dates.
+- **Active support/testing:** Mobile MMA Sim mobile, Mobile MMA Sim Demo, and Unwritten Meridian.
+- **PC development:** Mobile MMA Sim PC Edition has reached an internal v1.0.0 candidate; Windows acceptance remains open.
+- **In development:** TrackBorn and Seed Isles, both without announced release or presentation dates.
 - **Backlog:** Online MMA concept.
 - **Concept drafts:** unnamed simulation, strategy, story-driven and long-term 3D ideas shown only at a high level; these are not announced games or production commitments.
 
