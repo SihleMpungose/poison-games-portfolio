@@ -1,6 +1,6 @@
-# Poison Games / SihleM — Game Development Portfolio
+# Slow Poison Games / SihleM — Game Development Portfolio
 
-Static personal game-development portfolio for **SihleM / Poison Games**.
+Static personal game-development portfolio for **SihleM / Slow Poison Games**.
 
 The site is structured so each section has a different job instead of repeating the same project status:
 
@@ -9,7 +9,7 @@ The site is structured so each section has a different job instead of repeating 
 - **Journey** — how my development approach has changed over time.
 - **Skills** — areas I am actively practising.
 - **Publishing** — what I have learned from distribution and release work.
-- **Community** — where each Poison Games channel is used.
+- **Community** — where each Slow Poison Games channel is used.
 - **Devlog** — dated updates and decisions.
 
 ## Current focus — 30 October 2026
@@ -38,9 +38,9 @@ The site is structured so each section has a different job instead of repeating 
 - Unwritten Meridian — Google Play Early Access: https://play.google.com/store/apps/details?id=com.unwritten_meridian_book1.myapp
 - Beneath the Borrowed Light: https://sihlem.itch.io/beneath-the-borrowed-light
 - AI Browser Game Jam 5: https://itch.io/jam/ai-jam-5
-- Poison Games on itch.io: https://sihlem.itch.io/
+- Slow Poison Games on itch.io: https://sihlem.itch.io/
 
-## Official Poison Games community links
+## Official Slow Poison Games community links
 
 - X / Twitter: https://x.com/PoisonGamesSM
 - Facebook: https://www.facebook.com/share/14o7RKUEV2E/
@@ -48,7 +48,7 @@ The site is structured so each section has a different job instead of repeating 
 
 ## Brand identity
 
-- **Poison Games** — public game brand
+- **Slow Poison Games** — public game brand
 - **SihleM** — developer identity
 - **Sihle Mpungose** — formal / professional identity outside the game brand
 
@@ -57,7 +57,7 @@ The visual system uses a near-black base with controlled red and blue accents. P
 ## Files
 
 - `index.html` — portfolio and current-focus overview
-- `blog.html` — chronological Poison Games devlog
+- `blog.html` — chronological Slow Poison Games devlog
 - `styles.css` — shared dark/red/blue visual system
 - `script.js` — menu, reveal effects, section highlighting, scroll progress and current year
 - `assets/` — favicon and official public project artwork
