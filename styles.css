@@ -124,7 +124,7 @@ footer{background:#050709}.footer-inner{min-height:140px;padding-block:28px;disp
 
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ticker-track,.status-pill span{animation:none}.reveal{opacity:1;transform:none;transition:none}}
 
-/* ===== Poison Games dark / red / blue portfolio theme ===== */
+/* ===== Slow Poison Games dark / red / blue portfolio theme ===== */
 body{
   background:
     radial-gradient(circle at 88% 7%,rgba(255,64,89,.055),transparent 22%),
