@@ -101,7 +101,7 @@ button,a{-webkit-tap-highlight-color:transparent}
 
 .about-section{padding-top:100px}.about-grid{display:grid;grid-template-columns:1fr .95fr;gap:80px;align-items:center}.about-copy p:last-child{max-width:620px;margin:25px 0 0;color:var(--muted);font-size:17px;line-height:1.75}.identity-list{display:grid;gap:10px}.identity-list>div{min-height:76px;padding:13px 16px;display:flex;align-items:center;gap:14px;border:1px solid var(--line);border-radius:15px;background:rgba(255,255,255,.018)}.identity-badge{flex:0 0 46px;width:46px;height:46px;display:grid;place-items:center;border:1px solid var(--line-strong);border-radius:12px;background:#11181e;color:#c9d1cd;font-weight:900;font-size:12px}.identity-badge.poison{background:var(--acid);color:#0a0e09;border-color:transparent}.identity-list p{margin:0;display:flex;flex-direction:column}.identity-list strong{font-size:14px}.identity-list small{margin-top:4px;color:#75817b;font-size:11px}.independence-note{margin-top:28px;padding:20px 22px;display:flex;align-items:flex-start;gap:15px;border:1px solid rgba(185,255,75,.14);border-radius:17px;background:rgba(185,255,75,.028)}.independence-note>span{flex:0 0 34px;width:34px;height:34px;display:grid;place-items:center;border-radius:10px;background:rgba(185,255,75,.07);color:var(--acid)}.independence-note strong{display:block;margin:1px 0 6px;font-size:13px}.independence-note p{max-width:930px;margin:0;color:#9eaaa4;font-size:13.5px;line-height:1.7}
 
-.closing-section{margin-top:62px;background:var(--acid);color:#0a0e09;overflow:hidden}.closing-inner{position:relative;padding-block:108px}.closing-inner::after{content:"PG";position:absolute;right:-24px;bottom:-88px;font-size:280px;font-weight:950;line-height:1;letter-spacing:-.13em;color:rgba(10,14,9,.055);pointer-events:none}.dark-eyebrow{color:#3a6c1f}.closing-inner h2{position:relative;z-index:1;max-width:900px;font-size:clamp(52px,7.7vw,94px)}.closing-inner h2 span{color:#3a6f1c}.closing-inner>p{position:relative;z-index:1;max-width:720px;margin:25px 0 30px;color:#355827;font-size:18px;line-height:1.65}.button.dark{position:relative;z-index:1;background:#0a0e09;color:var(--text)}
+.closing-section{margin-top:62px;background:var(--acid);color:#0a0e09;overflow:hidden}.closing-inner{position:relative;padding-block:108px}.closing-inner::after{content:"SPG";position:absolute;right:-24px;bottom:-88px;font-size:280px;font-weight:950;line-height:1;letter-spacing:-.13em;color:rgba(10,14,9,.055);pointer-events:none}.dark-eyebrow{color:#3a6c1f}.closing-inner h2{position:relative;z-index:1;max-width:900px;font-size:clamp(52px,7.7vw,94px)}.closing-inner h2 span{color:#3a6f1c}.closing-inner>p{position:relative;z-index:1;max-width:720px;margin:25px 0 30px;color:#355827;font-size:18px;line-height:1.65}.button.dark{position:relative;z-index:1;background:#0a0e09;color:var(--text)}
 
 footer{background:#050709}.footer-inner{min-height:140px;padding-block:28px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:24px;border-top:1px solid var(--line)}.footer-brand{display:flex;align-items:center;gap:12px}.footer-brand strong{font-size:13px}.footer-brand p,.footer-note p{margin:3px 0 0;color:#65716b;font-size:10px}.footer-center{color:#5f6b65;font:700 9px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.1em;text-transform:uppercase}.footer-note{text-align:right}
 
@@ -811,3 +811,10 @@ footer{background:#05070b}
   .roadmap-card.backlog{grid-column:auto}
   .draft-grid{grid-template-columns:1fr}
 }
+
+
+/* Slow Poison Games homepage cover */
+.hero-cover{padding:0;background:#05070b;border-radius:26px;overflow:hidden;box-shadow:var(--shadow)}
+.hero-cover::before{display:none}
+.hero-cover-image{display:block;width:100%;height:auto;object-fit:cover}
+@media (max-width:900px){.hero-cover{max-width:100%}}
